@@ -6,13 +6,13 @@ pipeline {
 
   }
   stages {
-    stage('clean') {
+    stage('Clean') {
       steps {
         bat 'mvn -DskipTests clean'
       }
     }
 
-    stage('compile') {
+    stage('Compile') {
       steps {
         bat 'mvn -DskipTests compile'
       }
