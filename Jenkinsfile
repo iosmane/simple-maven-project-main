@@ -8,13 +8,13 @@ pipeline {
   stages {
     stage('Clean') {
       steps {
-        bat 'mvn -DskipTests clean'
+        bat 'cd simple-maven-project-main && mvn -DskipTests clean'
       }
     }
 
     stage('Compile') {
       steps {
-        bat 'mvn -DskipTests compile'
+        bat 'cd simple-maven-project-main && mvn -DskipTests compile'
       }
     }
 
